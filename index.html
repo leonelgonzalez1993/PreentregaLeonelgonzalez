@@ -4,22 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!--Asocio el archivo de estilos de bootstrap-->
+	<!--animaciones-->
+	<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+	<!--Añado AOS-->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+	<!--Añado bootstrap-->
 	<link rel="stylesheet" href=".\css\bootstrap-min.css"/>
 	<!--Asocio el archivo de estilos propio-->
     <link rel="stylesheet" href=".\css\estilos.css" />
-    <title>Prueba</title>
+    <title>REPARACIONES LEONEL</title>
 </head>
 <body>
+
+	<main class="principal">
 <!-- inicio encabezado -->
 		<header class="cabecera">
 <!-- logo -->
-			<img class="banner1" src="./img/LOGO1.png" alt="banner1">
+			<img class="banner1" class="animate__animated animate__bounce" src="./img/LOGO1.png" alt="banner1">
 <!-- fin logo -->
-			<h2 class="TituloPrincipal">"SERVICIO TECNICO DE COMPUTADORAS"</h2>
+			<h2 class="TituloPrincipal">SERVICIO TECNICO DE COMPUTADORAS</h2>
 			<p id="titulosecundario"> Realizamos reparacion y mantenimiento de equipos
 				Presupuestamos tu consulta sin cargo
 			</p>
 <!-- inicio nav -->
+			
+	<nav class="hamburguesa">
+
+ 		<div class="logohamburguesa">
+	
+<!--inserto mi logo-->
+	
+	</div>
+	
+		<div class="menu-btn">
+	
+ 			<div class="btn-line"></div>
+	
+ 			<div class="btn-line"></div>
+	
+			<div class="btn-line"></div>
+	
+	</div>
+		<div class="menuhamburguesa">
+			<ul>
+	 				<li><a href="#">Inicio</a></li>
+					<li><a href="#">Acerca de</a></li>
+					<li><a href="#">Servicios</a></li>
+					<li><a href="#">Contacto</a></li>
+	
+			</ul>	
+	</div>
+	
+</nav>
+
 			<nav>
 				<ul class="menu">
 					<li class="item"><a href="./index.html">Inicio</a></li>
@@ -34,24 +74,18 @@
 <!-- fin nav -->
 		</header>
 
-			<main class="grid">
-
-				<!--Grilla principal-->
-
-				<div class="box1"><img class="imagen1" src="./img/servicio.jpeg"></div>
+		<section class="grilla">
+				<div data-aos="flip-left" class="box1"> <img class="imagen1" src="./img/servicio.jpeg"></div>
 				<div class="box2"><a>Calidad de servicio desde la recepcion hasta la entrega del equipo, servicio post reparacion</a></div>
 				<div class="box3"><img class="imagen1" src="./img/soportedistancia.png"></div>
 				<div class="box4"><a>Soporte tecnico a distancia, por telefono o chat, evitando asi el translado de equipos y ahorrando tiempo</div>
 				<div class="box5"><img class="imagen1" src="./IMG/diagnostico.webp"></div>
 				<div class="box6"><a>Diagnosticos en el dia, rapida solucion segun el caso</a></div>
+		</section>
 
-
-			</main>
-
-
-<footer class="pie">
-<div class="row">
-	<div class="col">
+	<footer class="pie">
+		<div class="row">
+			<div class="col">
 		<a>Direccion: Piedrabuena y Catamarca San Jose Temperley Buenos aires Argentina</a>
 	</div>
 	<div class="col">
@@ -63,5 +97,10 @@
 
 </footer>
 
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+	AOS.init();
+  </script>
+  </main>
 </body>
 </html>

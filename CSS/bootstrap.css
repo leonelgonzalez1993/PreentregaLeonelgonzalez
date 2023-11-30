@@ -222,20 +222,20 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   color: var(--bs-heading-color);
 }
 
-h1, .h1 {
+ .h1 {
   font-size: calc(1.375rem + 1.5vw);
 }
 @media (min-width: 1200px) {
-  h1, .h1 {
+ .h1 {
     font-size: 2.5rem;
   }
 }
 
-h2, .h2 {
+ .h2 {
   font-size: calc(1.325rem + 0.9vw);
 }
 @media (min-width: 1200px) {
-  h2, .h2 {
+ .h2 {
     font-size: 2rem;
   }
 }
@@ -499,10 +499,6 @@ button:not(:disabled),
 ::-moz-focus-inner {
   padding: 0;
   border-style: none;
-}
-
-textarea {
-  resize: vertical;
 }
 
 fieldset {
@@ -3006,6 +3002,7 @@ textarea.form-control-lg {
   border-radius: var(--bs-btn-border-radius);
   background-color: var(--bs-btn-bg);
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  margin-top: 25px;
 }
 @media (prefers-reduced-motion: reduce) {
   .btn {
@@ -4474,6 +4471,8 @@ textarea.form-control-lg {
 .card-footer:last-child {
   border-radius: 0 0 var(--bs-card-inner-border-radius) var(--bs-card-inner-border-radius);
 }
+
+
 
 .card-header-tabs {
   margin-right: calc(-0.5 * var(--bs-card-cap-padding-x));

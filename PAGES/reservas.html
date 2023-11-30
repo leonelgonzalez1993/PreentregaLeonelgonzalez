@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reservas</title>
+    <title>Hace tu reserva</title>
 	<!--Asocio el archivo de estilos de bootstrap-->
-	<link rel="stylesheet" href="..\css\bootstrap-grid.css"/>
+	<link rel="stylesheet" href="..\css\bootstrap.css"/>
 	<!--Asocio el archivo de estilos propio-->
     <link rel="stylesheet" href="..\css\estilos.css" />
 </head>
@@ -28,11 +28,73 @@
                         <li class="item"><a href="../PAGES/faq.html">Preguntas</a></li>
                         <li class="item"><a href="../PAGES/contacto.html">Contacto</a></li>
                     </ul>
-                </nav>
-        
-        
+                </nav>      
     <!-- fin nav -->
   </header>
+    <main>
+         <!--titulo del formulario-->   
+            <h2 class="tituloreserva">Haga su reserva para atencion en el momento</h2>
+        <!--estructura del formulario-->
+        <div class="container-m">
+            <form class="row">
+                <div class="row-3" >
+                    <label for="nombreinput">Nombre</label>
+                    <input type="text" class="form-control" id="nameinput">
+                </div>
+
+                <div class="row-3">
+                    <label for="telinput">Telefono</label>
+                    <input type="tel" class="form-control" id="nameinput">
+                </div>
+                
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Mensaje</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div> 
+
+                <div class="row-3">
+                    <label for="nombreinput">Fecha y hora de reserva</label>
+                    <input type="date" class="form-control" id="nameinput">
+                </div>
+
+                <div class="row-1">
+                    <label for="nombreinput">Fecha y hora de reserva</label>
+                    <input type="time" class="form-control" id="nameinput">
+                </div>
+                
+                <div> <button type="button" class="btn btn-primary">Primary</button></div>
+
+            </form>
+
+
+
+        </div>
+
+        <div class="tituloinferior">
+                <h2>La atencion en el momento contempla los siguientes servicios </h2>
+                    <ul>
+                        <li><h2>Desbloqueos de computadoras</h2></li>
+                        <li><h2>Instalacion de sistemas operativos</h2></li>
+                        <li><h2>Desbloqueos de cuenta google FRP</h2></li>
+                        <li><h2>Consultar por otros trabajos en el momento</h2></li>
+                    </ul>
+               
+            </div>
+    </main>
+
+
+  <footer class="pie">
+    <div class="row">
+        <div class="col">
+            <a>Direccion: Piedrabuena y Catamarca San Jose Temperley Buenos aires Argentina</a>
+        </div>
+        <div class="col">
+            <a href="https://wa.me/message/NXIXCSG5JJJAC1"><img class="whatsapp" src="../img/whatsapp_icon.png.webp">Telefono 1166763009</a>
+        </div>
+    
+    </div>   
+</footer>
+
 </body>
 
 
